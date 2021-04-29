@@ -1,0 +1,53 @@
+.about {
+  height: 600px;
+  max-width: 979px;
+  //background-color: brown;
+  margin: auto;
+
+  .about-header {
+    max-width: 979px;
+    height: 378px;
+    margin: auto;
+    margin-top: 90px;
+    //background-color: red;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 209, 64, 0.6),
+        rgba(255, 209, 64, 0.6)
+      ),
+      url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .about-info {
+    position: relative;
+    bottom: 24px;
+    max-width: 980px;
+    .head {
+      width: 229px;
+      border-bottom: solid;
+      border-width: 3px;
+      height: 35px;
+      //background-color: blanchedalmond;
+
+      h2 {
+        font-family: Gill;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+    }
+    P {
+      padding-top: 20px;
+      font-family: Gill;
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .about {
+    width: 700px;
+  }
+}

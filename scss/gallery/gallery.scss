@@ -1,0 +1,129 @@
+.gallery {
+  margin: auto;
+  max-width: 980px;
+  height: 710px;
+  //background-color: teal;
+  .gallery-head {
+    width: 229px;
+    height: 38px;
+    border-bottom: solid;
+    border-width: 3px;
+    margin-top: 65px;
+    h2 {
+      font-family: Gill;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+  }
+  .colors {
+    // background-color: burlywood;
+    height: 510px;
+    width: 980px;
+    margin: auto;
+    margin-top: 30px;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      width: 980px;
+
+      .yellow {
+        width: 489px;
+        height: 187px;
+        margin: auto;
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 209, 64, 0.6),
+            rgba(255, 209, 64, 0.6)
+          ),
+          url(../images/yellow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .pink {
+        width: 187px;
+        height: 187px;
+        background-image: linear-gradient(
+            to right,
+            rgba(238, 67, 103, 0.6),
+            rgba(238, 67, 103, 0.6)
+          ),
+          url(../images/pink.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .green {
+        width: 265px;
+        height: 187px;
+        background-image: linear-gradient(
+            to right,
+            rgba(8, 173, 105, 0.6),
+            rgba(8, 173, 105, 0.6)
+          ),
+          url(../images/green.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .purple {
+        width: 603px;
+        height: 306px;
+        background-image: linear-gradient(
+            to right,
+            rgba(84, 13, 110, 0.6),
+            rgba(84, 13, 110, 0.6)
+          ),
+          url(../images/purple.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .teal {
+        width: 355px;
+        height: 306px;
+        background-image: linear-gradient(
+            to right,
+            rgba(59, 206, 171, 0.6),
+            rgba(59, 206, 171, 0.6)
+          ),
+          url(../images/teal.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .gallery {
+    width: 700px;
+    .colors {
+      width: 700px;
+
+      .row {
+        width: 700px;
+        justify-content: center;
+        justify-content: space-between;
+        // margin: 10px;
+
+        .yellow {
+          width: 200px;
+        }
+        .pink {
+        }
+        .green {
+        }
+        .purple {
+          width: 300px;
+        }
+        .teal {
+        }
+      }
+    }
+  }
+}

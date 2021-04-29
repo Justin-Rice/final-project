@@ -1,0 +1,99 @@
+.contact {
+  width: 980px;
+  height: 800px;
+  margin: auto;
+  // background-color: aqua;
+  .contact-header {
+    margin-top: 65px;
+    width: 229px;
+    border-bottom: solid;
+    border-width: 3px;
+    height: 35px;
+    //background-color: blanchedalmond;
+
+    h2 {
+      font-family: Gill;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    height: 500px;
+    //  background-color: brown;
+    margin-top: 76px;
+    .form {
+      height: 400px;
+      width: 529px;
+      form {
+        input {
+          width: 529px;
+          height: 60px;
+          margin-top: 21px;
+          outline: none;
+        }
+        input#message {
+          height: 180px;
+        }
+      }
+    }
+
+    .img {
+      height: 442px;
+      width: 400px;
+      background-color: burlywood;
+      background-image: url(../images/map.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  button {
+    height: 60px;
+    width: 167px;
+    font-family: Gill;
+    color: white;
+    background-color: $pink;
+    font-size: 16px;
+    border: 0;
+  }
+}
+#message::placeholder {
+  position: relative;
+  top: -75px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact {
+    height: 1210px;
+    width: 650px;
+    margin: auto;
+    .contact-container {
+      margin-left: 140px;
+      width: 650px;
+      // flex-wrap: wrap;
+      flex-direction: column;
+      height: 900px;
+      .form {
+        width: 400px;
+        form {
+          input {
+            width: 400px;
+          }
+        }
+      }
+    }
+    button {
+      margin: auto;
+      margin-top: 50px;
+      margin-left: 250px;
+
+      justify-content: center;
+    }
+  }
+}

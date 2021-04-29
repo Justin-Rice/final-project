@@ -1,0 +1,100 @@
+.blog {
+  width: 980px;
+  height: 917px;
+  margin: auto;
+  //background-color: brown;
+
+  .head {
+    width: 229px;
+    border-bottom: solid;
+    border-width: 3px;
+    height: 35px;
+    margin-top: 65px;
+    //background-color: blanchedalmond;
+
+    h2 {
+      font-family: Gill;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+  }
+
+  .blog-container {
+    height: 850px;
+    width: 980px;
+    // background-color: burlywood;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    .blogs {
+      width: 460px;
+      height: 257px;
+      //background-color: cadetblue;
+      .blogs-top {
+        display: flex;
+        justify-content: space-between;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      .date {
+        width: 60px;
+        height: 60px;
+        background-color: $pink;
+        margin-top: 0;
+        p {
+          text-align: center;
+          line-height: 0.2;
+          position: relative;
+          top: 17px;
+          font-family: Gill;
+          font-size: 22px;
+          color: white;
+          text-decoration: none;
+        }
+        p.month {
+          font-size: 12px;
+          text-decoration: none;
+        }
+      }
+      .img {
+        width: 380px;
+        height: 140px;
+        background-image: url(../images/blog.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+      }
+      .text {
+        width: 380px;
+        height: 97px;
+        // background-color: cornflowerblue;
+        float: right;
+        p {
+          font-family: Gill;
+          font-size: 15px;
+        }
+        p.yes {
+          font-size: 13px;
+          color: $pink;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .blog {
+    height: 1700px;
+    width: 460px;
+    .blog-container {
+      height: 1500px;
+      width: 460px;
+    }
+  }
+}

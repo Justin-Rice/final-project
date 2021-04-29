@@ -1,0 +1,53 @@
+.nav-black {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 0 auto;
+    width: 980px;
+    height: 60px;
+
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+    .logo-black {
+      width: 92px;
+      height: 42px;
+      margin-right: auto;
+      text-align: center;
+      // line-height: 42px;
+      // font-family: Gill;
+      // border: solid;
+      // border-width: 3px;
+      background-image: url(../images/logo-black1.png);
+
+      font-size: 20px;
+      color: black;
+    }
+    .links-black {
+      width: 480px;
+      height: 42px;
+      align-self: center;
+      display: flex;
+      font-family: Gill;
+      font-size: 15px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        margin: auto;
+        //background-color: black;
+      }
+      span {
+        margin: 0 auto;
+        position: relative;
+        top: 6px;
+        font-size: 28px;
+        color: $pink;
+      }
+      #con {
+        border-right: none;
+        border-color: none;
+      }
+    }
+  }
+}
